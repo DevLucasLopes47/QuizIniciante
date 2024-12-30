@@ -12,7 +12,7 @@
 
 ## Descrição
 
-O **QuizIniciante** é um modelo de quiz voltado para iniciantes em programação, desenvolvido sem o uso de banco de dados.
+O **QuizIniciante** é um modelo de quiz, desenvolvido sem o uso de banco de dados.
 O projeto foi elaborado como parte da Unidade Curricular de **Programação de Soluções Computacionais** da UniBH e implementado utilizando a linguagem **Java**.
 
 ---
