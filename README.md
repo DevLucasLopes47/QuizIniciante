@@ -4,7 +4,7 @@
 - [Descrição](#descrição)
 - [Desenvolvedores](#desenvolvedores)
 - [Perguntas](#perguntas)
-  - [Como incluir a sua pergunta](#como-incluir-a-sua-pergunta)
+- [Como incluir a sua pergunta](#como-incluir-a-sua-pergunta)
 - [Como jogar](#como-jogar)
 - [Diagrama de Classes](#diagrama-de-classes)
 
