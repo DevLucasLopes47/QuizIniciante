@@ -1,66 +1,101 @@
 # QuizIniciante
 
-- [Descrição](#descricao)
+## Índice
+- [Descrição](#descrição)
 - [Desenvolvedores](#desenvolvedores)
 - [Perguntas](#perguntas)
+  - [Como incluir a sua pergunta](#como-incluir-a-sua-pergunta)
 - [Como jogar](#como-jogar)
 - [Diagrama de Classes](#diagrama-de-classes)
 
+---
 
 ## Descrição
 
-Modelo de quiz para iniciantes em programação, sem utilização de banco de dados.
-O projeto foi proposto para a UC de Programação de Soluções Computacionais da UniBH.
+O **QuizIniciante** é um modelo de quiz voltado para iniciantes em programação, desenvolvido sem o uso de banco de dados.
+O projeto foi elaborado como parte da Unidade Curricular de **Programação de Soluções Computacionais** da UniBH e implementado utilizando a linguagem **Java**.
 
-Código feito em java.
+---
 
 ## Desenvolvedores
+
+Este projeto foi desenvolvido por:
 
 - [João Paulo Leão](https://github.com/Joutos)
 - [Felipe Santos](https://github.com/FelipeDoismil)
 - [Giovana Altair](https://github.com/GiovannaAltair)
 - [Lucas Lopes](https://github.com/Lucaslopes47)
 
+---
+
 ## Perguntas
 
-A classe de perguntas é automaticamente populada pelo arquivo ```perguntas.txt```. Que se encontra no diretório raiz do repositório.
+As perguntas do quiz são gerenciadas automaticamente a partir do arquivo `perguntas.txt`, localizado no diretório raiz do repositório.
 
-# Como incluir a sua pergunta
+### Como incluir a sua pergunta
 
-A inclusão de perguntas é feita pelas linhas do arquivo ```perguntas.txt```. Para adicionar a sua pergunta siga o exemplo:
-Exemplo:
+Para adicionar novas perguntas ao quiz, edite o arquivo `perguntas.txt`. Cada linha do arquivo representa uma pergunta no seguinte formato:
 
 ```
-Pergunta 1
-Quanto é 2+2?
-A resposta correta é a letra C.
-A - 6
-B - 2
-C - 4
-D - 5
+ID;Texto da pergunta;Resposta correta;Alternativa A;Alternativa B;Alternativa C;Alternativa D
 ```
 
-A linha correspondente a essa pergunta ficará do seguinte modo
-```1;Quanto é 2+2?;C;A - 6;B - 2;C - 4;D - 5```
+#### Exemplo
+
+Se você deseja adicionar a seguinte pergunta:
+
+- **Pergunta:** Quanto é 2 + 2?
+- **Resposta correta:** C
+- **Alternativas:**
+  - A - 6
+  - B - 2
+  - C - 4
+  - D - 5
+
+A linha correspondente no arquivo `perguntas.txt` deve ser:
+
+```
+1;Quanto é 2+2?;C;A - 6;B - 2;C - 4;D - 5
+```
+
+---
 
 ## Como jogar
 
-Ao executar o código, na tela inicial serão exibidas 3 opções, Jogar, Desenvolvedores e Sair.
+Ao executar o programa, você será apresentado à tela inicial com três opções:
 
-- Jogar: Inicia o jogo
-- Desenvolvedores: Exibe os desenvolvedores do projeto
-- Sair: Encerra o programa
+1. **Jogar**: Inicia o jogo.
+2. **Desenvolvedores**: Exibe informações sobre os criadores do projeto.
+3. **Sair**: Encerra o programa.
 
-Ao selecionar jogar. O programa exibe a lista de personagens. Cada um dos jogadores escolhe o seu, a escolha é o modo que o projeto irá se referir a eles no decorrer do jogo.
+### Passo a passo do jogo
 
-Em cada turno é exibida uma pergunta e suas alternativas. Cada jogador escolherá a opção que acredita estar correta, e seguirão para a tela de confirmação de respostas.
+1. **Escolha dos jogadores**:
+   - Cada jogador escolhe seu personagem. O nome escolhido será utilizado pelo programa para identificá-los durante o jogo.
 
-Se algum dos jogadores decidir que quer mudar a resposta. Ambos os jogadores terão que responder novamente.
+2. **Exibição das perguntas**:
+   - Em cada rodada, uma pergunta é exibida com suas alternativas.
+   - Cada jogador escolhe a alternativa que considera correta.
 
-Ao confirmarem a resposta, se você errou, será exibida uma mensagem que você errou e perdeu 45% da sua vida.
-Se a vida chegar a 0%, você está eliminado e a vitória é dada ao outro jogador.
-Em um caso que as perguntas terminam, aquele com a maior porcentagem de vida ganha. Caso a vida seja igual, é um empate.
+3. **Confirmação das respostas**:
+   - Após escolherem, os jogadores têm a opção de revisar suas respostas antes de confirmá-las.
+   - Caso um jogador decida alterar sua resposta, ambos precisarão responder novamente.
+
+4. **Avaliação das respostas**:
+   - Se a resposta estiver errada, o jogador perde 45% da sua vida.
+   - Quando a vida de um jogador chega a 0%, ele é eliminado e o outro jogador vence.
+
+5. **Condição de empate**:
+   - Caso todas as perguntas terminem, o jogador com maior vida restante é declarado vencedor.
+   - Se ambos tiverem a mesma vida, o jogo termina em empate.
+
+---
 
 ## Diagrama de Classes
 
+Abaixo está o diagrama de classes que representa a estrutura do projeto:
+
 ![Diagrama de Classes](https://github.com/Joutos/QuizIniciante/blob/main/ClassDiagram.png)
+
+---
+
